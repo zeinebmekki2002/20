@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Formulaire de Rendez-vous</title>
+    <link rel="stylesheet" href="pagecv5.css">
+    <script src="pagecv5.js" async></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header id="mainHeader">
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="pagecv2.html">Parcours académiques</a></li>
+                    <li><a href="pagecv3.html">Expériences</a></li>
+                    <li><a href="pagecv4.html">Contact</a></li>
+                    <li><a href="pagecv5.html">Formulaire de rendez-vous</a></li>
+                </ul>
+            </nav>
+        </div>
+        <br />
+        <br />
+    </header>
+
+    <div class="container">
+        <div class="title">Formulaire de rendez-vous</div>
+        <form class="form" id="form">
+            <div class="form-control">
+                <label for="fullName">Nom complet</label>
+                <input type="text" id="fullName" placeholder="Entrez votre nom complet">
+                <small class="error-message" id="fullNameError">Le nom complet ne peut pas être vide</small>
+            </div>
+
+            <div class="form-control">
+                <label for="Email">Adresse email</label>
+                <input type="text" id="Email" placeholder="Entrez votre adresse email">
+                <small class="error-message" id="emailError">Email ne peut pas être vide</small>
+            </div>
+
+            <div class="form-control">
+                <label for="phoneNumber">Numéro de téléphone</label>
+                <input type="text" id="phoneNumber" placeholder="Entrez votre numéro de téléphone">
+                <small class="error-message" id="phoneError">Le numéro de téléphone ne peut pas être vide</small>
+            </div>
+
+            <div class="form-control">
+                <label for="appointmentDate">Date souhaitée</label>
+                <input type="date" id="appointmentDate">
+                <small class="error-message" id="dateError">La date ne peut pas être vide</small>
+            </div>
+
+            <div class="form-control">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Entrez votre message"></textarea>
+                <small class="error-message" id="messageError">Le message ne peut pas être vide</small>
+            </div>
+
+            <button type="submit">Enregistrer</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
